@@ -1,0 +1,10 @@
+node_modules/
+next.config.js
+package-lock.json
+yarn.lock
+
+.next
+
+.env
+
+
