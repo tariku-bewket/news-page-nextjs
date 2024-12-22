@@ -4,7 +4,7 @@ import ModalBackdrp from '@/components/modal-backdrp';
 import { getNewsItem } from '@/lib/news';
 
 export default async function InterceptedImagePage({ params }) {
-  const newsSlug = params.newsSlug;
+  const newsSlug = params.slug;
   const newsItem = await getNewsItem(newsSlug);
 
   if (!newsItem) {

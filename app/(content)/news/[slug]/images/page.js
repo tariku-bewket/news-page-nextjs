@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import { getNewsItem } from '@/lib/news';
 
 export default async function ImagePage({ params }) {
-  const newsSlug = params.newsSlug;
+  const newsSlug = params.slug;
   const newsItem = await getNewsItem(newsSlug);
 
   if (!newsItem) {
